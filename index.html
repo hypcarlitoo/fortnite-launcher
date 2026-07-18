@@ -1,123 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortnite Free Download - PC 2024</title>
-<link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <span class="fn-logo">F</span>FORTNITE
-        </div>
-        <ul class="nav-links">
-            <li>Accueil</li>
-            <li>Télécharger</li>
-            <li>News</li>
-            <li>Support</li>
-        </ul>
-        <button class="btn-login">Se connecter</button>
-    </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HYPCARLITOO Launcher — choisissez votre chapitre et votre saison." />
+    <meta name="theme-color" content="#09090d" />
+    <title>HYPCARLITOO — Fortnite Launcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">FORTNITE</h1>
-            <p class="hero-subtitle">CHAPITRE 5 SAISON 4 - ABSOLUTE DOOM</p>
-            <p class="hero-desc">Rejoins la bataille ! Téléchargement gratuit et illimité sur PC Windows.</p>
-            <button class="btn-download-hero" onclick="downloadFile()">
-                <span class="download-icon">⬇</span> TÉLÉCHARGER GRATUITEMENT
-            </button>
-            <p class="size-info">Taille: 2.4 GB | Version: 29.10 | Compatible Windows 10/11</p>
-        </div>
-        <div class="hero-image">
-            <div class="character-card">
-                <div class="skin-emoji">🎮</div>
-            </div>
-        </div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#accueil" data-route="accueil" aria-label="Accueil HYPCARLITOO Launcher">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>HYPCARLITOO<small>FORTNITE LAUNCHER</small></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">☰</button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+          <a class="nav-link" href="#accueil" data-route="accueil">Accueil</a>
+          <a class="nav-link" href="#telecharger" data-route="telecharger">Télécharger</a>
+          <a class="nav-link" href="#news" data-route="news">News</a>
+          <a class="nav-link" href="#aide" data-route="aide">Aide</a>
+        </nav>
+
+        <a class="button button-primary header-download download-link" href="#telecharger">Télécharger</a>
+      </div>
     </header>
 
-    <section class="features">
-        <h2>Pourquoi Fortnite ?</h2>
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">⚔️</div>
-                <h3>Battle Royale 100 joueurs</h3>
-                <p>Affronte tes amis dans le mode Battle Royale iconique avec 100 joueurs.</p>
+    <main id="main-content">
+      <!-- ACCUEIL -->
+      <section class="view" id="accueil" data-view="accueil" aria-labelledby="home-title">
+        <div class="shell">
+          <div class="hero">
+            <div>
+              <p class="eyebrow">Un launcher, vos saisons</p>
+              <h1 id="home-title">Choisis ton chapitre.<br /><span class="accent">Revis ta saison.</span></h1>
+              <p class="lead">HYPCARLITOO Launcher est un launcher Fortnite qui te permet de choisir ton chapitre et ta saison après avoir téléchargé le jeu. L’expérience est actualisée en même temps que les mises à jour du vrai Fortnite.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#telecharger" data-route="telecharger">Télécharger le launcher <span aria-hidden="true">↓</span></a>
+                <a class="button button-secondary" href="#aide" data-route="aide">Comment ça marche ? <span aria-hidden="true">→</span></a>
+              </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">🏗️</div>
-                <h3>Construis pour gagner</h3>
-                <p>Utilise le système de construction unique pour créer des structures.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🎨</div>
-                <h3>Skins exclusifs</h3>
-                <p>Découvre des centaines de skins, emotes et cosmétiques exclusifs.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🆓</div>
-                <h3>100% Gratuit</h3>
-                <p>Joue gratuitement sur toutes les plateformes. Aucun abonnement requis.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="download-section">
-        <div class="download-card">
-            <h2>Télécharge Fortnite maintenant</h2>
-            <p>Compatible Windows 10/11 (64-bit)</p>
-            <div class="download-steps">
-                <div class="step">
-                    <div class="step-num">1</div>
-                    <p>Clique sur le bouton ci-dessous</p>
-                </div>
-                <div class="step">
-                    <div class="step-num">2</div>
-                    <p>Exécute le fichier .bat en tant qu'administrateur</p>
-                </div>
-                <div class="step">
-                    <div class="step-num">3</div>
-                    <p>L'installation démarre automatiquement</p>
-                </div>
-                <div class="step">
-                    <div class="step-num">4</div>
-                    <p>Connecte-toi avec ton compte Epic Games</p>
-                </div>
-            </div>
-            <button class="btn-download-main" onclick="downloadFile()">
-                <span class="download-icon">⬇</span> TÉLÉCHARGER FORTNITE
-            </button>
-            <p class="warning">⚠️ Désactive ton antivirus si Windows Defender bloque l'installation</p>
-        </div>
-    </section>
+            <aside class="hero-side" aria-label="Aperçu du launcher">
+              <div class="orbit one"></div>
+              <div class="orbit two"></div>
+              <div class="hero-glyph" aria-hidden="true">H</div>
+              <div class="hero-card">
+                <span class="hero-card-label">Launcher</span>
+                <strong>Chapitre &amp; saison à choisir</strong>
+                <div class="hero-card-line"><span class="status-dot"></span>Mises à jour suivies</div>
+              </div>
+            </aside>
+          </div>
 
-    <section class="news">
-        <h2>Dernières actualités</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <div class="news-img">🛡️</div>
-                <h3>Chapitre 5 Saison 4 disponible</h3>
-                <p>Découvre le thème Absolute Doom avec Doctor Doom et ses sbires.</p>
+          <section class="section" aria-labelledby="about-title">
+            <div class="section-heading">
+              <p class="eyebrow">Le projet</p>
+              <h2 id="about-title">Une autre manière de retrouver Fortnite.</h2>
+              <p class="lead">Une fois le jeu installé, le launcher te permet de sélectionner le chapitre et la saison que tu souhaites lancer. Tout est pensé pour être clair, simple et rapide à utiliser.</p>
             </div>
-            <div class="news-item">
-                <div class="news-img">💎</div>
-                <h3>Nouveaux skins V-Bucks</h3>
-                <p>Obtiens des skins exclusifs en complétant le Battle Pass.</p>
-            </div>
-            <div class="news-item">
-                <div class="news-img">🗺️</div>
-                <h3>Nouvelle carte</h3>
-                <p>Explore la nouvelle carte avec de nouveaux points d'intérêt.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <p>© 2024 Epic Games, Inc. - Ce site n'est pas affilié à Epic Games. Tous droits réservés.</p>
+            <div class="feature-grid">
+              <article class="card">
+                <div class="icon" aria-hidden="true">01</div>
+                <h3>Choisis ta saison</h3>
+                <p>Sélectionne le chapitre et la saison disponibles directement depuis le launcher après l’installation.</p>
+              </article>
+              <article class="card">
+                <div class="icon" aria-hidden="true">02</div>
+                <h3>Installe, puis joue</h3>
+                <p>Le téléchargement te donne accès au launcher ; l’aide t’accompagne ensuite pour installer le jeu.</p>
+              </article>
+              <article class="card">
+                <div class="icon" aria-hidden="true">03</div>
+                <h3>Reste à jour</h3>
+                <p>Le projet suit les mises à jour du vrai Fortnite afin de garder les informations actualisées.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- TELECHARGER -->
+      <section class="view" id="telecharger" data-view="telecharger" aria-labelledby="download-title">
+        <div class="shell">
+          <div class="page-hero">
+            <p class="eyebrow">Télécharger</p>
+            <h1 id="download-title">Prêt à lancer<br /><span class="accent">ton aventure.</span></h1>
+            <p class="lead">Télécharge le launcher, installe le jeu, puis choisis la saison que tu veux retrouver.</p>
+          </div>
+
+          <div class="download-layout">
+            <section class="download-callout" aria-label="Téléchargement du launcher">
+              <div>
+                <p class="eyebrow">Windows</p>
+                <h2>HYPCARLITOO Launcher</h2>
+                <p>Le lien ouvre le téléchargement de la dernière version publiée.</p>
+              </div>
+              <div>
+                <a class="button button-primary download-link" href="#">Télécharger maintenant <span aria-hidden="true">↓</span></a>
+                <p class="download-meta">Windows • dernière version disponible</p>
+              </div>
+            </section>
+
+            <section aria-labelledby="install-title">
+              <p class="eyebrow">Installation</p>
+              <h2 id="install-title">En 3 étapes.</h2>
+              <div class="steps">
+                <article class="step"><span class="step-number">1</span><div><h3>Télécharge le launcher</h3><p>Utilise le bouton à gauche et attends la fin du téléchargement.</p></div></article>
+                <article class="step"><span class="step-number">2</span><div><h3>Installe le jeu</h3><p>Ouvre le fichier téléchargé, puis suis les indications affichées par le launcher pour installer les fichiers du jeu.</p></div></article>
+                <article class="step"><span class="step-number">3</span><div><h3>Choisis ton chapitre et ta saison</h3><p>Après l’installation, ouvre le launcher et sélectionne l’expérience que tu souhaites lancer.</p></div></article>
+              </div>
+              <aside class="release-tip"><span aria-hidden="true">✦</span><span><strong>Pour le créateur du site :</strong> le lien de ce bouton se règle dans la constante <code>DOWNLOAD_URL</code> du fichier <code>script.js</code>.</span></aside>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section class="view" id="news" data-view="news" aria-labelledby="news-title">
+        <div class="shell">
+          <div class="page-hero">
+            <p class="eyebrow">News</p>
+            <h1 id="news-title">Les dernières<br /><span class="accent">informations.</span></h1>
+            <p class="lead">Les annonces du projet et les évolutions du launcher seront publiées ici.</p>
+          </div>
+
+          <!-- Duplique un bloc .news-item ci-dessous à chaque nouvelle annonce. -->
+          <div class="news-list">
+            <article class="news-item"><time class="news-date" datetime="2026-07-18">À mettre à jour</time><div><h2>Bienvenue sur HYPCARLITOO Launcher</h2><p>Le site est prêt à présenter le launcher et à guider les joueurs vers le téléchargement.</p></div><span class="news-tag">Projet</span></article>
+            <article class="news-item"><time class="news-date" datetime="2026-07-18">À mettre à jour</time><div><h2>Suivi des mises à jour</h2><p>Les informations du launcher évoluent au rythme des mises à jour du vrai Fortnite.</p></div><span class="news-tag">Infos</span></article>
+            <article class="news-item"><time class="news-date" datetime="2026-07-18">À mettre à jour</time><div><h2>Besoin d’aide ?</h2><p>Consulte la section Aide pour retrouver les étapes d’installation et la présentation du projet.</p></div><a class="news-tag" href="#aide" data-route="aide">Voir l’aide →</a></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- AIDE -->
+      <section class="view" id="aide" data-view="aide" aria-labelledby="help-title">
+        <div class="shell">
+          <div class="page-hero">
+            <p class="eyebrow">Aide</p>
+            <h1 id="help-title">On t’aide à<br /><span class="accent">bien commencer.</span></h1>
+            <p class="lead">Retrouve les informations essentielles pour télécharger, installer et comprendre le projet.</p>
+          </div>
+
+          <div class="help-grid">
+            <section class="panel" aria-labelledby="faq-title">
+              <p class="eyebrow">Questions fréquentes</p>
+              <h2 id="faq-title">Installation</h2>
+              <details open><summary>Comment installer le jeu ?</summary><p>Télécharge d’abord le launcher depuis l’onglet Télécharger. Ouvre ensuite le fichier téléchargé, puis suis les instructions qu’il affiche pour installer le jeu.</p></details>
+              <details><summary>Quand puis-je choisir ma saison ?</summary><p>Après le téléchargement et l’installation du jeu, ouvre le launcher : c’est là que tu pourras choisir le chapitre et la saison proposés.</p></details>
+              <details><summary>Le téléchargement ne démarre pas</summary><p>Vérifie que tu utilises le bouton de téléchargement de ce site. Si le problème continue, télécharge la dernière version depuis la page Release GitHub du projet.</p></details>
+              <details><summary>Pourquoi mon navigateur affiche-t-il un avertissement ?</summary><p>Les navigateurs peuvent avertir avant l’ouverture d’un fichier exécutable. Télécharge uniquement le fichier publié sur le dépôt officiel du projet et vérifie son nom avant de l’ouvrir.</p></details>
+            </section>
+
+            <aside class="credits" aria-label="Présentation du projet">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>Le jeu a été produit par HYPCARLITOO et c’est un fortnite où tu peux choisir ton chapitre et ta saison. Tout est actualisé en même temps que les mise à jours du vrai Fortnite.</p>
+              <small>HYPCARLITOO — Fortnite Launcher</small>
+            </aside>
+          </div>
+
+          <p class="legal">Fortnite est une marque d’Epic Games, Inc. Ce projet est présenté comme un projet indépendant ; ajoute les mentions ou autorisations nécessaires à ta situation avant sa publication.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>© <span id="year"></span> HYPCARLITOO Launcher</span>
+        <nav class="footer-links" aria-label="Navigation du pied de page">
+          <a href="#accueil" data-route="accueil">Accueil</a>
+          <a href="#telecharger" data-route="telecharger">Télécharger</a>
+          <a href="#news" data-route="news">News</a>
+          <a href="#aide" data-route="aide">Aide</a>
+        </nav>
+      </div>
     </footer>
 
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
