@@ -203,6 +203,47 @@ h3 { font-size: 1.04rem; letter-spacing: -.025em; }
 .hero-card strong { display: block; margin: .35rem 0 .85rem; font-size: 1.45rem; letter-spacing: -.045em; }
 .hero-card-line { display: flex; align-items: center; gap: .6rem; color: #d7d7dd; font-size: .87rem; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+.season-stream {
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: .9rem;
+  min-height: 420px;
+  overflow: hidden;
+  padding: 1.2rem 0;
+  border: 1px solid rgba(141,123,255,.24);
+  border-radius: 1.15rem;
+  background: linear-gradient(145deg, rgba(19,20,38,.92), rgba(10,11,19,.88));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 25px 70px rgba(0,0,0,.26);
+}
+.season-stream::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: .55;
+  background-image: radial-gradient(rgba(216,255,66,.32) 1px, transparent 1px), radial-gradient(rgba(141,123,255,.42) 1px, transparent 1px);
+  background-position: 0 0, 18px 18px;
+  background-size: 38px 38px;
+  mask-image: linear-gradient(90deg, transparent, black 17%, black 83%, transparent);
+}
+.season-stream-head, .season-stream-foot { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding: 0 1.15rem; color: #bcbcc7; font-size: .68rem; font-weight: 850; letter-spacing: .13em; }
+.season-live { display: inline-flex; align-items: center; gap: .45rem; color: var(--accent); }
+.season-live i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 12px currentColor; }
+.marquee-viewport { position: relative; z-index: 1; overflow: hidden; width: 100%; padding: .2rem 0; mask-image: linear-gradient(90deg, transparent, black 11%, black 89%, transparent); }
+.marquee-lower { margin-top: .2rem; }
+.season-track { display: flex; width: max-content; animation: season-scroll 42s linear infinite; }
+.season-track-reverse { animation-direction: reverse; animation-duration: 35s; }
+.season-group { display: flex; gap: .65rem; padding-right: .65rem; }
+.season-chip { display: inline-flex; align-items: center; min-width: max-content; padding: .74rem .84rem; border: 1px solid rgba(255,255,255,.11); border-radius: .55rem; color: #e9e9ef; background: rgba(255,255,255,.055); font-size: .77rem; font-weight: 780; white-space: nowrap; box-shadow: 0 7px 18px rgba(0,0,0,.16); }
+.season-chip.c1 { border-color: rgba(216,255,66,.32); background: linear-gradient(135deg, rgba(216,255,66,.19), rgba(216,255,66,.045)); }
+.season-chip.c2 { border-color: rgba(64,180,255,.32); background: linear-gradient(135deg, rgba(64,180,255,.19), rgba(64,180,255,.045)); }
+.season-chip.c3 { border-color: rgba(244,124,255,.31); background: linear-gradient(135deg, rgba(244,124,255,.18), rgba(244,124,255,.04)); }
+.season-chip.c4 { border-color: rgba(255,174,63,.31); background: linear-gradient(135deg, rgba(255,174,63,.19), rgba(255,174,63,.04)); }
+.season-chip.c5 { border-color: rgba(55,235,180,.31); background: linear-gradient(135deg, rgba(55,235,180,.19), rgba(55,235,180,.04)); }
+.season-chip.c6 { border-color: rgba(141,123,255,.40); background: linear-gradient(135deg, rgba(141,123,255,.25), rgba(141,123,255,.06)); }
+.season-stream-foot { color: #a3a3ad; font-size: .64rem; }
+@keyframes season-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.season-stream:hover .season-track { animation-play-state: paused; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .card { padding: 1.25rem; border: 1px solid var(--line); border-radius: .95rem; background: linear-gradient(140deg, rgba(255,255,255,.075), rgba(255,255,255,.018)); transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
 .card:hover { border-color: rgba(216,255,66,.30); transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,0,0,.22), 0 0 28px rgba(216,255,66,.06); }
@@ -250,6 +291,14 @@ details p { margin: -.15rem 0 0; padding-bottom: 1rem; color: var(--muted); font
 .credits small, .legal { color: var(--muted); }
 .legal { margin-top: 1rem; color: #777884; font-size: .78rem; }
 
+/* FAQ */
+.faq-layout { display: grid; grid-template-columns: 1.2fr .8fr; align-items: stretch; gap: 1rem; }
+.faq-panel { padding-top: .45rem; }
+.faq-statement { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-height: 100%; padding: 2rem; border: 1px solid rgba(216,255,66,.28); border-radius: .95rem; background: radial-gradient(circle at 92% 7%, rgba(216,255,66,.22), transparent 9rem), linear-gradient(145deg, rgba(216,255,66,.13), rgba(141,123,255,.07)); }
+.faq-statement-kicker { margin-bottom: 1rem; color: var(--accent); font-size: .69rem; font-weight: 850; letter-spacing: .13em; }
+.faq-statement strong { max-width: 360px; font-size: clamp(2rem, 4vw, 3.15rem); line-height: .95; letter-spacing: -.065em; }
+.faq-statement p { margin: 1.2rem 0 1.6rem; color: #c6c8b3; }
+
 /* FOOTER + MESSAGE */
 .site-footer { padding: 1.5rem 0 2.2rem; border-top: 1px solid var(--line); }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .82rem; }
@@ -265,10 +314,11 @@ details p { margin: -.15rem 0 0; padding-bottom: 1rem; color: var(--muted); font
   .site-nav { position: absolute; top: 76px; right: 1rem; left: 1rem; display: none; padding: .55rem; border: 1px solid var(--line); border-radius: .8rem; background: #121218; box-shadow: 0 18px 35px rgba(0,0,0,.35); }
   .site-nav.open { display: grid; }
   .nav-link { padding: .8rem; }
-  .hero, .download-layout, .help-grid { grid-template-columns: 1fr; }
+  .hero, .download-layout, .help-grid, .faq-layout { grid-template-columns: 1fr; }
   .hero { min-height: auto; gap: 2rem; }
   .hero-side { min-height: 320px; }
   .feature-grid { grid-template-columns: 1fr; }
+  .season-stream { min-height: 330px; }
   .news-item { grid-template-columns: 1fr; gap: .45rem; }
   .news-tag { justify-self: start; margin-top: .35rem; }
 }
